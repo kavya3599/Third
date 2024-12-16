@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+    <div class="container-fluid">
+
+      <img src="./img1.png" class="rounded-cicle img-fluid" alt="image1" width="90px" />
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-5">
+            <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item mx-5">
+            <a class="nav-link text-light" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown mx-5">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Veg Biryani</a></li>
+              <li><a class="dropdown-item" href="#">Non-Veg Biryani</a></li>
+              <li><a class="dropdown-item" href="#">Veg Starters</a></li>
+              <li><a class="dropdown-item" href="#">Non-Veg Starters</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item mx-5">
+            <a class="nav-link text-light" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- carousel -->
+  <hr class="container-fluid">
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img9.jpg" class="d-block" alt="image9" width="100%" height="300px">
+      </div>
+      <div class="carousel-item">
+        <img src="./img10.jpg" class="d-block" alt="image10" width="100%" height="300px">
+      </div>
+      <div class="carousel-item">
+        <img src="./img11.jpg" class="d-block" alt="image11" width="100%" height="300px">
+      </div>
+      <div class="carousel-item">
+        <img src="./img12.jpg" class="d-block" alt="image12" width="100%" height="300px">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- cards -->
+  <div class="h3 text-danger text-center pt-3">Menu</div>
+  <hr class="container">
+  <div class="d-flex justify-content-center gap-5 flex-wrap">
+    <div class="card" style="width: 18rem;">
+      <img src="./img2.jpg" class="card-img-top h-60" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center text-success">Veg Biyani</h5>
+        <a href="#" class="btn btn-danger d-flex justify-content-center" data-bs-toggle="tooltip"
+          data-bs-placement="top" title="Hurry Up">Order Now</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="./img3.jpg" class="card-img-top h-60" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center text-success">Non-Veg Biryani</h5>
+        <a href="#" class="btn btn-danger d-flex justify-content-center" data-bs-toggle="tooltip"
+          data-bs-placement="top" title="Hurry Up">Order Now</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="./img4.jpg" class="card-img-top h-60" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center text-success">Starters</h5>
+        <a href="#" class="btn btn-danger d-flex justify-content-center" data-bs-toggle="tooltip"
+          data-bs-placement="top" title="Hurry Up">Order Now</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Accordian -->
+  <hr class="container">
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button text-warning" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Chicken Biryani
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Indian restaurateur Kris Dhillon believes that the</strong> dish originated in Persia and was brought
+          to South Asia by the Mughals,dish originated in Persia and was brought to South Asia by the Mughals.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed text-warning" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Veg Biryani
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Indian restaurateur Kris Dhillon believes that the</strong> dish originated in Persia and was brought
+          to South Asia by the Mughals,dish originated in Persia and was brought to South Asia by the Mughals.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item mb-5">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed text-warning" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Starters
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Indian restaurateur Kris Dhillon believes that the</strong> dish originated in Persia and was brought
+          to South Asia by the Mughals,dish originated in Persia and was brought to South Asia by the Mughals.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  <hr class="container">
+  
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 justify-content-center">
+        <div class="col d-flex justify-content-center">
+            <img src="./img2.jpg" alt="" width="240px" height="200px">
+        </div>
+        <div class="col d-flex justify-content-center">
+            <img src="./img3.jpg" alt="" width="240px" height="200px">
+        </div>
+        <div class="col d-flex justify-content-center">
+            <img src="./img4.jpg" alt="" width="240px" height="200px">
+        </div>
+        <div class="col d-flex justify-content-center">
+            <img src="./img5.jpg" alt="" width="240px" height="200px">
+        </div>
+    </div>
+    <div class="row" style="height: 40px;">
+        <div class="col-12"></div> <!-- This is the empty column -->
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 justify-content-center">
+        <div class="col d-flex justify-content-center">
+            <img src="./img5.jpg" alt="" width="240px" height="200px">
+        </div>
+        <div class="col d-flex justify-content-center">
+            <img src="./img4.jpg" alt="" width="240px" height="200px">
+        </div>
+        <div class="col d-flex justify-content-center">
+            <img src="./img3.jpg" alt="" width="240px" height="200px">
+        </div>
+        <div class="col d-flex justify-content-center">
+            <img src="./img2.jpg" alt="" width="240px" height="200px">
+        </div>
+    </div>
+</div>
+
+
+
+  <!-- progress bars -->
+  <hr class="container-fluid">
+  <div class="container mt-5">
+    <h1 class="text-center mb-5 text-warning">Food Offers</h1>
+
+    <!-- Veg Offer -->
+    <div class="mb-4">
+      <div class="h4 font-weight-bold">Veg Deal</div>
+      <div class="progress">
+        <div class="progress-bar bg-success" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0"
+          aria-valuemax="100">60% Off</div>
+      </div>
+      <p>Offer ends in 3 days! Grab your veg now.</p>
+    </div>
+
+    <!-- Non veg Offer -->
+    <div class="mb-4">
+      <div class="h4 font-weight-bold">Non-Veg Special</div>
+      <div class="progress">
+        <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+          aria-valuemax="100">80% Off</div>
+      </div>
+      <p>Offer ends in 5 days! Don't miss the deal.</p>
+    </div>
+
+    <!-- Veg Starter Offer -->
+    <div class="mb-4">
+      <div class="h4 font-weight-bold">Veg Starters Promo</div>
+      <div class="progress">
+        <div class="progress-bar bg-info" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0"
+          aria-valuemax="100">40% Off</div>
+      </div>
+      <p>Offer ends in 2 days! Limited time offer.</p>
+    </div>
+
+    <!-- Dessert Offer -->
+    <div class="mb-4">
+      <div class="h4 font-weight-bold">Dessert Delight</div>
+      <div class="progress">
+        <div class="progress-bar bg-danger" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+          aria-valuemax="100">90% Off</div>
+      </div>
+      <p>Offer ends in 1 day! Sweeten your meal with a dessert.</p>
+    </div>
+
+  </div>
+
+  <!-- modal -->
+  <hr class="container">
+  <div class="container mt-5">
+    <h1 class="text-center mb-5 text-warning">Fast Foods</h1>
+
+    <!-- Food Items (Flexbox Row) -->
+    <div class="d-flex flex-wrap justify-content-center">
+      <!-- Food Item 1 -->
+      <div class="card mx-3" style="width: 18rem; margin-bottom: 20px;">
+        <img src="./img6.jpg" class="card-img-top" alt="Food Item" style="height: 210px;">
+        <div class="card-body">
+          <h5 class="card-title text-success">Pizza</h5>
+          <p class="card-text">Delicious pizza with fresh toppings.</p>
+          <button class="btn btn-danger" data-toggle="modal" data-target="#cartModal"
+            onclick="addToCart('Pizza', 1)">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Food Item 2 -->
+      <div class="card mx-3" style="width: 18rem; margin-bottom: 20px;">
+        <img src="./img7.jpg" class="card-img-top" alt="Food Item">
+        <div class="card-body">
+          <h5 class="card-title text-success">Burger</h5>
+          <p class="card-text">Juicy burger with cheese and sauce.</p>
+          <button class="btn btn-danger" data-toggle="modal" data-target="#cartModal"
+            onclick="addToCart('Burger', 1)">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Food Item 3 -->
+      <div class="card mx-3" style="width: 18rem; margin-bottom: 20px;">
+        <img src="./img8.jpg" class="card-img-top" alt="Food Item" style="height: 210px;">
+        <div class="card-body">
+          <h5 class="card-title text-success">Pasta</h5>
+          <p class="card-text">Pasta with creamy sauce and vegetables.</p>
+          <button class="btn btn-danger" data-toggle="modal" data-target="#cartModal"
+            onclick="addToCart('Pasta', 1)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Modal for Cart -->
+  <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cartModalLabel">Cart</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p id="cartItem"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Proceed to Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- modal -->
+  <div class="d-flex justify-content-center align-items-center min-vh-10">
+    <!-- Button to trigger modal -->
+    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      View Cart
+    </button>
+  </div>
+
+  <!-- Modal Structure -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Your Orders</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <ul class="list-group">
+            <li class="list-group-item">Dum Biryani</li>
+            <li class="list-group-item">Lollipop</li>
+            <li class="list-group-item">Sprite</li>
+            <li class="list-group-item">Wings</li>
+          </ul>
+        </div>
+
+        <!-- Modal Footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Track Your Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- footer -->
+  <footer class="bg-success text-white text-center py-4 mt-5">
+    <div id="footer-loader" class="d-flex justify-content-center align-items-center">
+      <div class="spinner-border text-light" role="status">
+        <span class="sr-only text-danger">@</span>
+      </div>
+      <span class="ml-3">Loading more items...</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
